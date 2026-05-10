@@ -10,7 +10,7 @@ app.use(express.json())
 
 app.use(
   cors({
-    origin: 'https://expert-book-bv80o2vrr-amitghosh2005s-projects.vercel.app',
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 )
